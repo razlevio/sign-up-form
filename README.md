@@ -1,5 +1,5 @@
 # Strix
-Strix community sing-up form creates with HTML, CSS and JavaScript
+Strix community sign-up form created with HTML, CSS and JavaScript
 
 [Live Demo](https://razlevio.github.io/strix/) 🦉
 
