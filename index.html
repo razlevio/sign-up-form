@@ -1,1 +1,55 @@
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strix</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦉</text></svg>"
+    />
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+  <body>
+    <div class="sign-up-card">
+        <div class="right-panel">
+            <img src="/resources/Strix-logo.png" class="logo"/>
+            <h1>Create a new account.</h1>
+            <p>Already have an account? <a href="#">Sign in</a></a></p>
+            <form action="" method="post" id="form">
+                <div class="names-section">
+                    <label for="firstName">FIRST NAME</label>
+                    <input type="text" name="firstName" id="firstName" placeholder=" " required></input>
+                    <label for="lastName">LAST NAME</label>
+                    <input type="text" name="lastName" id="lastName" placeholder=" " required>
+                </div>
+                <div class="email-section">
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" id="email" placeholder=" " required>
+                </div>
+                <div class="phone-section">
+                    <label for="phone">PHONE NUMBER</label>
+                    <input type="tel" name="phone" id="phone" placeholder=" " required>
+                </div>
+                <div class="passwords-section">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" name="password" id="password" placeholder=" " required>
+                    <label for="verifyPassword">CONFIRM PASSWORD</label>
+                    <input type="password" name="verifyPassword" id="verifyPassword" placeholder=" " required>
+                </div>
+                <div class="passwords-error-section">
+                    <p class="pass-error-msg"> *Passwords do not match</p>
+                </div>
+                <div class="submit-section">
+                    <button name="submit" id="submit">Sign Up</button>
+                </div>
+            </form>
+        </div>
+        <div class="left-panel">
+            <img src="/resources/STRIX.png" class="strix">
+        </div>
+    </div>
+  </body>
+</html>
