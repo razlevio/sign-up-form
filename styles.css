@@ -11,7 +11,8 @@
   --main-dark: #0f0e17;
   --yellow: #ffe169;
   --titles: #fffffe;
-  --paragraphs: #a7a9be;
+  --form-text: #fffffe;
+  --light-grey: #a7a9be;
   --buttons-text: #fffffe;
 }
 
@@ -34,7 +35,8 @@ body {
 
 .sign-up-card {
   display: flex;
-  width: 70%;
+  width: 80%;
+  height: 90%;
   overflow: hidden;
   border-radius: 2rem;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.75);
@@ -44,11 +46,11 @@ body {
 
 .right-panel {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
+  gap: 100px;
   width: 50%;
-  background-color: salmon;
 }
 
 .left-panel {
@@ -56,19 +58,115 @@ body {
   justify-content: center;
   align-items: center;
   width: 50%;
-  background-color: lime;
+  caret-color: transparent;
 }
 
 .logo {
-  height: 400px;
+  height: 200px;
+  caret-color: transparent;
 }
 
 .strix {
-  height: 500px;
+  height: 600px;
+  caret-color: transparent;
+}
+
+.header-txt {
+  font-family: "Juice ITC";
+  font-size: 6rem;
+  color: var(--titles);
+  caret-color: transparent;
+}
+
+.para-txt {
+  font-family: "DM Sans";
+  font-size: 2rem;
+  font-weight: 900;
+  caret-color: transparent;
+  color: var(--light-grey);
+}
+
+#link:link {
+  text-decoration: none;
+  color: var(--yellow);
 }
 
 .form-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   font-family: "DM Sans";
   font-weight: 900;
-  font-size: 1rem;
+  font-size: 1.7rem;
+  margin: 0 auto;
+  padding: 1em;
+  color: var(--form-text);
+  caret-color: white;
+}
+
+.names-section {
+  display: flex;
+  gap: 20px;
+}
+
+.email-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.phone-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.passwords-section {
+  display: flex;
+  gap: 20px;
+}
+
+.passwords-error-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.submit-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.submit-btn {
+  font-family: "DM Sans";
+  font-weight: 900;
+  font-size: 2rem;
+  color: var(--buttons-text);
+  transition-duration: 0.4s;
+  background-color: var(--main-dark);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 4px solid var(--yellow);
+}
+
+.submit-btn:hover {
+  background-color: var(--yellow);
+  color: var(--main-dark);
+}
+
+.label-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.pass-error-msg {
+  font-size: 18px;
+}
+
+input {
+  background-color: var(--main-dark);
+  border: 4px solid var(--light-grey);
+  outline: none;
+  transition: 0.5s;
+}
+
+input:focus {
+  border: 4px solid var(--yellow);
 }
