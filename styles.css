@@ -151,7 +151,7 @@ body {
   flex-direction: column;
 }
 
-.submit-btn {
+.submit {
   font-family: "DM Sans";
   font-weight: 900;
   font-size: 2rem;
@@ -164,7 +164,7 @@ body {
   cursor: pointer;
 }
 
-.submit-btn:hover {
+.submit:hover {
   background-color: var(--yellow);
   color: var(--main-dark);
 }
@@ -176,6 +176,7 @@ body {
 
 .pass-error-msg {
   display: none;
+  color: red;
   font-size: 18px;
 }
 
@@ -186,6 +187,8 @@ input {
   transition: 0.5s;
   padding-top: 5px;
   padding-bottom: 5px;
+  padding-left: 15px;
+  color: var(--form-text)
 }
 
 input:focus {

@@ -26,7 +26,7 @@
                 <p class="para-txt">Already have an account? <a href="." id="link">Sign in</a></a></p>
                 <hr class="spacer">
             </div>
-            <form action="" method="post" id="form" class="form-content">
+            <form action="" id="form" class="form-content" onsubmit="return checkPassword(this)">
                 <div class="names-section">
                     <div class="label-input">
                         <label for="firstName">FIRST NAME</label>
@@ -59,7 +59,7 @@
                     <p class="pass-error-msg"> *Passwords do not match</p>
                 </div>
                 <div class="submit-section">
-                    <button name="submit" id="submit" class="submit-btn">Sign up</button>
+                    <button type="submit" name="submit" id="submit" class="submit">Sign up</button>
                 </div>
             </form>
         </div>
