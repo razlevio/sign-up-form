@@ -175,7 +175,6 @@ body {
 }
 
 .pass-error-msg {
-  display: none;
   color: red;
   font-size: 18px;
 }
@@ -188,7 +187,7 @@ input {
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 15px;
-  color: var(--form-text)
+  color: var(--form-text);
 }
 
 input:focus {
