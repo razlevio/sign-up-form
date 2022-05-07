@@ -35,19 +35,18 @@ body {
 
 .spacer {
   background-image: linear-gradient(to right, #282828, var(--yellow), #282828);
-  margin-top: 50px;
 }
 
 .sign-up-card {
   display: flex;
-  justify-content: space-between;
-  position: relative;
+  justify-content: center;
+  align-items: center;
   width: 75%;
+  height: 90%;
   border-radius: 2rem;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.75);
-  background-repeat: no-repeat;
-  background-size: cover;
   overflow: auto;
+  min-width: 500px;
 }
 
 .right-panel {
@@ -55,41 +54,39 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  flex-flow: column nowrap;
-  gap: 40px;
   width: 50%;
-  padding: 100px;
+  min-width: inherit;
 }
 
 .left-panel {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 50%;
   caret-color: transparent;
+  overflow: hidden;
 }
 
 .logo {
-  height: 200px;
+  height: 100px;
   caret-color: transparent;
 }
 
 .strix {
-  height: 600px;
+  position: relative;
+  right: 80px;
   caret-color: transparent;
 }
 
 .header-txt {
   font-family: "Juice ITC";
-  font-size: 6rem;
+  font-size: 4rem;
   color: var(--titles);
   caret-color: transparent;
   white-space: nowrap;
+  margin-top: 20px;
 }
 
 .para-txt {
   font-family: "DM Sans";
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-weight: 900;
   caret-color: transparent;
   color: var(--light-grey);
@@ -108,12 +105,13 @@ body {
 .form-content {
   display: flex;
   flex-direction: column;
-  gap: 20px;
   font-family: "DM Sans";
   font-weight: 900;
-  font-size: 1.7rem;
+  gap: 20px;
+  font-size: 1rem;
   color: var(--form-text);
   caret-color: white;
+  padding: 0px 20px;
 }
 
 .text-section {
@@ -149,18 +147,19 @@ body {
 .submit-section {
   display: flex;
   flex-direction: column;
+  margin-top: 10px;
 }
 
 .submit {
   font-family: "DM Sans";
   font-weight: 900;
-  font-size: 2rem;
+  font-size: 1.2rem;
   color: var(--buttons-text);
   transition-duration: 0.4s;
   background-color: var(--main-dark);
   padding-top: 5px;
   padding-bottom: 5px;
-  border: 4px solid var(--yellow);
+  border: 2px solid var(--yellow);
   cursor: pointer;
 }
 
@@ -174,22 +173,17 @@ body {
   flex-direction: column;
 }
 
-.pass-error-msg {
-  color: red;
-  font-size: 18px;
-}
-
 input {
   background-color: var(--main-dark);
-  border: 4px solid var(--light-grey);
+  border: 2px solid var(--light-grey);
   outline: none;
   transition: 0.5s;
   padding-top: 5px;
   padding-bottom: 5px;
-  padding-left: 15px;
+  padding-left: 10px;
   color: var(--form-text);
 }
 
 input:focus {
-  border: 4px solid var(--yellow);
+  border: 2px solid var(--yellow);
 }
